@@ -12,7 +12,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<h1>trocar.js</h1>
+				<h1 class="page-title">trocar.js</h1>
 			</div>
 		</div>
 	</div>
@@ -22,17 +22,33 @@
 			<h2>Example</h2>
 		</header>
 
-		<div class="text" tabindex="-1">
-			I'm an example text you can actually edit.
+		<div class="row">
+            <p class="text-focus" tabindex="-1">
+			 I'm an example text editable when you focus.
+            </p>
 		</div>
+        
+        <div class="row">
+            <p class="text-always" tabindex="-1">
+                I'm an example text editable all the time with multiline. Paste content didn't get filtered.
+            </p>
+        </div>
 	</div>
+    
 	<script>
-
-	$('.text').trocar({
+	$('.text-focus').trocar({
 		'on': 'focus',
-		'off': 'blur'
+		'off': 'blur',
+        'endOnEnter': true,
+        'filterPaste': true
 	});
-
+        
+    $('.text-always').trocar({
+		'on': 'always',
+		'off': 'blur',
+        'endOnEnter': false,
+        'filterPaste': false
+	});
 	</script>
 </body>
 </html>
