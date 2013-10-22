@@ -1,6 +1,6 @@
 {
     "name": "trocar",
-    "version": "0.1",
+    "version": "0.1.0",
     "title": "jQuery.trocar",
     "description": "Small jquery library to allow users to edit the content of any html element by using the contenteditable attribute.",
     "keywords": ["inline", "edit", "contenteditable"],
