@@ -4,7 +4,10 @@
     "title": "jQuery.trocar",
     "description": "Small jquery library to allow users to edit the content of any html element by using the contenteditable attribute.",
     "keywords": ["inline", "edit", "contenteditable"],
-    "author": { "name": "Adrián Seijo"},
+    "author": { 
+        "name": "Adrián Seijo",
+        "email": "kileras@gmail.com"
+    },
     "licenses": [
             {
                     "type": "AGPL-3.0",
